@@ -9,7 +9,7 @@ export default function BestInStore() {
 
     return (
         <div className="p-5 mx-auto bg-black ">
-            <h1 className="flex w-[20%] text-3xl font-bold text-center my-10 font-serif border-b-2 border-[#C08A46] mx-auto justify-center">Best in Store</h1>
+            <h1 className="flex w-[60%] text-3xl font-bold text-center my-10 font-serif border-b-2 border-[#C08A46] mx-auto justify-center">Best in Store</h1>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2">
                 {/* card */}
                 {BestInStoreData.map((item, index) => {
@@ -20,7 +20,7 @@ export default function BestInStore() {
                                 <h2 className="text-xl font-bold flex-1 text-center">{item.name}</h2>
                                 
 
-                                <p className="text-[#C08A46] text-center">{item.price}$</p>
+                                <p className="text-[#C08A46] text-center font-bold">{item.price}$</p>
                             </div>
                             <ShopButton text={'Shop Now'}/>
                         </div>

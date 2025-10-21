@@ -23,6 +23,6 @@ export const BestInStoreData = [
         id: 4,
         name: "Nike Air Max 90",
         price: 420,
-        image: "/best/4.jpg",
+        image: "/best/5.jpg",
     }
 ]
