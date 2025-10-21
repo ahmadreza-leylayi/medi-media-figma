@@ -1,9 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
+import ShopButton from "../ui/ShopButton";
 
 export default function HeroSection() {
   return (
-    <section className="bg-[url('/background/bg-2.jpg')] md:bg-[url('/background/bg-0.jpg')] bg-cover bg-center bg-dark text-light overflow-hidden h-screen">
+    <section className="bg-[url('/background/bg-3.png')] md:bg-[url('/background/bg-0.jpg')] bg-cover bg-center bg-dark text-light overflow-hidden h-screen">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-20 px-6">
         {/* Left Content */}
         <motion.div
@@ -20,9 +21,8 @@ export default function HeroSection() {
                   <span className="text-sm font-serif">Starting at :</span>
           <p className="text-primary text-3xl font-semibold text-[#C08A46]">$450.00</p>
     </div>
-            <button className=" bg-stone-800 hover:border-b-4 border-[#C08A46] text-white/80 px-6 py-3 rounded-md cursor-pointer hover:bg-stone-600 transition-all duration-200 ease-in-out font-serif">
-                Shop Now
-            </button>
+          <ShopButton text="Shop Now"/>
+   
         </motion.div>
 
         {/* Right Image */}
